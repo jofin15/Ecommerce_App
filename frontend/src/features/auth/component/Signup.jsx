@@ -1,27 +1,30 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { selectUser ,createUserAsync} from "../authSice";
 
-// import {
-//   increment,
-//   incrementAsync,
-//   selectCount,
-// } from '../authSice';
 
 export default function Signup() {
-  // const count = useSelector(selectCount);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const user=useSelector(selectUser)  
+  
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
+  
+  // const user = useSelector(selectUser);
   console.log(errors);
 
   return (
+  <>
+  {user && <Navigate to="/" replace={true}></Navigate>}
+  
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      {/* {user?.email} */}
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <img
           className="mx-auto h-10 w-auto"
@@ -34,7 +37,11 @@ export default function Signup() {
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form noValidate className="space-y-6" onSubmit={handleSubmit((data)=>{
+        <form 
+          noValidate 
+          className="space-y-6" 
+          onSubmit={handleSubmit((data)=>{
+            dispatch(createUserAsync({email:data.email,password:data.password}))
           console.log("sign up data:- ",data);
         })}>
           <div>
@@ -44,10 +51,14 @@ export default function Signup() {
             >
               Email address
             </label>
+            
             <div className="mt-2">
               <input
                 id="email"
-                {...register("email",{required:"email is required"})}
+                {...register("email",{required:"email is required",pattern:{
+                  value:/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi,
+                  message:"email not valid"
+                }})}
                 type="email"  
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -66,7 +77,15 @@ export default function Signup() {
             <div className="mt-2">
               <input
                 id="password"
-                {...register("password",{required:"password is required"})}
+                {...register("password",{required:"password is required",
+                pattern:{
+                  value:/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm,
+                  message:`
+                  - at least 8 characters\n
+                  - must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number
+                  - Can contain special characters`
+                }
+              })}
                 type="password"
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -85,7 +104,9 @@ export default function Signup() {
             <div className="mt-2">
               <input
                 id="confirmPassword"
-                {...register("confirmPassword",{required:"Confirm password required"})}
+                {...register("confirmPassword",{required:"Confirm password required",
+                validate:(value, formValues) =>value === formValues.password || "password not matching"
+              })}
                 type="password"
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -114,5 +135,6 @@ export default function Signup() {
         </p>
       </div>
     </div>
+    </>
   );
 }

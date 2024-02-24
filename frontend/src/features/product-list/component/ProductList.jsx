@@ -34,8 +34,8 @@ import { ITEMS_PER_PAGE } from "../../../app/constants";
 
 //category filters
 const sortOptions = [
-  { name: "Best Rating", sort: "rating", order: "desc", current: true },
-  { name: "Price: Low to High", sort: "price", order: "asc", current: false },
+  { name: "Best Rating", sort: "rating", order: "", current: true },
+  { name: "Price: Low to High", sort: "price", order: "", current: false },
   { name: "Price: High to Low", sort: "price", order: "desc", current: false },
 ];
 
@@ -400,6 +400,7 @@ function DesktopFilter({ handleFilter, filters }) {
     </>
   );
 }
+
 function Pagination({ handlePage, page, setPage, totalItems = 100 }) {
   const totalPages=Math.ceil(totalItems/ITEMS_PER_PAGE)
   return (
@@ -461,7 +462,7 @@ function Pagination({ handlePage, page, setPage, totalItems = 100 }) {
                 </div>
               ))}
 
-              <div className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0" onClick={(e) =>         handlePage(page<totalPages-1?(page+1):page)} >
+              <div className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 cursor-pointer" onClick={(e) =>         handlePage(page<totalPages-1?(page+1):page)} >
                 <span className="sr-only">
                   Next
                 </span>

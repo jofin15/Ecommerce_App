@@ -22,9 +22,9 @@ export function fetchProductsByFilters(filter, sort, pagination) {
 
   console.log("the api filter that i am recieving:- ", filter);
   let queryString = "";
+
   for (let key in filter) {
     const categoryValues = filter[key];
-
     if (categoryValues.length > 0) {
       const lastCategoryValue = categoryValues[categoryValues.length - 1];
       console.log("lastcategoryvalue:-", lastCategoryValue);
@@ -50,6 +50,7 @@ export function fetchProductsByFilters(filter, sort, pagination) {
     const totalItems = totalItemsHeader ? parseInt(totalItemsHeader, 10) : 0;
     console.log("total items headeer:-", totalItemsHeader);
     console.log("total items:-", totalItems);
+    
     resolve({
       data: {
         products: data,
