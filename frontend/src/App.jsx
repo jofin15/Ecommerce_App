@@ -16,6 +16,10 @@ import {
 
 import ProductDetailPages from './pages/ProductDetailPages';
 import Protected from './features/auth/component/Protected';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { selectUser } from './features/auth/authSice';
+import { fetchItemsByUserIdAsync } from './features/cart/cartSlice';
 
 const router = createBrowserRouter([
   {
@@ -58,12 +62,21 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const dispatch=useDispatch()
+  const user=useSelector(selectUser)
+
+
+  useEffect(()=>{
+    if(user){
+      dispatch(fetchItemsByUserIdAsync(user))
+    }
+  },[user])
+  
+  console.log("user:- ",user);
+
   return (
     <div className="App">
-      {/* <Home />
-      <LoginPage />
-      <SignupPage /> */}
-       <RouterProvider router={router} />
+        <RouterProvider router={router} />
     </div>
   );
 }

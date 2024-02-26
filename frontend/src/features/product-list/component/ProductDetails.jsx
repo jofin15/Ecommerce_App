@@ -4,6 +4,8 @@ import { RadioGroup } from "@headlessui/react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllProductByIdAsync, selectedProductById } from "../productSlice";
+import { selectUser } from "../../auth/authSice";
+import { addToCartAsync } from "../../cart/cartSlice";
 
 const colors = [
   { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
@@ -39,20 +41,30 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(colors[0]);
   const [selectedSize, setSelectedSize] = useState(sizes[2]);
   const products = useSelector(selectedProductById);
   const dispatch = useDispatch();
   const params = useParams();
+  const user=useSelector(selectUser)
 
+  
   useEffect(() => {
     console.log("params:- ", params.id);
     dispatch(fetchAllProductByIdAsync(params.id));
   }, [dispatch, params.id]);
-
+  
   const product1 = products[0];
+  const user1=user[0]
   console.log("my product ", product1);
+  
+  const handleCart=(e)=>{
+    // e.preventDefault()
+  console.log("user id",user1.id);
+    dispatch(addToCartAsync({...product1,quantity:1,user:user1.id}))
+  }
 
   return (
     <div className="bg-white">
@@ -296,10 +308,11 @@ export default function ProductDetails() {
 
                 <Link to="/cart">
                   <button
+                    onClick={handleCart}
                     type="submit"
                     className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
-                    Add to bag
+                    Add to Cart
                   </button>
                 </Link>
               </form>
