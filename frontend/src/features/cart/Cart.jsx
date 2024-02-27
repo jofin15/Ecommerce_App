@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { selectedProductById } from '../product-list/productSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteItemFromCartAsync, selectCart, updateItemAsync } from './cartSlice';
@@ -20,9 +20,12 @@ const handleRemove=(e,id)=>{
   dispatch(deleteItemFromCartAsync(id))
 }
   return (
+    <>
+    {/* {cart.length===0 && <Navigate to="/" replace={true}></Navigate>} */}
     <div className="mx-auto mt-16 max-w-7xl bg-white px-4 py-6 sm:px-6 lg:px-8">  
       <div  className="border-t border-gray-200 px-4 py-6 sm:px-6">
         <h1 className="text-3xl font-bold my-5 tracking-tight text-gray-900">cart</h1>
+        {cart.length===0 && <h2>Your Cart is empty</h2>}
         <div className="flow-root">
           <ul role="list" className="-my-6 divide-y divide-gray-200">
             {cart.map((product) => (
@@ -108,5 +111,6 @@ const handleRemove=(e,id)=>{
         </div>
       </div>
     </div>
+    </>
   );
 }

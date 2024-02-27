@@ -2436,83 +2436,251 @@
     {
       "id": "73b7",
       "email": "jofinjomin15@gmail.com",
-      "password": "Robertdowney15"
+      "password": "Robertdowney15",
+      "addresses": [
+        {
+          "name": "JOFIN",
+          "email": "jofinjomin15@gmail.com",
+          "phone": "09152056712",
+          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+          "city": "mumbai",
+          "state": "Maharashtra",
+          "pincode": "401107"
+        },
+        {
+          "name": "Jomin Johnson",
+          "email": "jomin15@gmail.com",
+          "phone": "9152045687",
+          "street": "patel plaxe",
+          "city": "navi mumbai",
+          "state": "Maharashtra",
+          "pincode": "401107"
+        },
+        {
+          "name": "Johnson",
+          "email": "Johnson@gmail.com",
+          "phone": "123456789",
+          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+          "city": "kollam",
+          "state": "Kerala",
+          "pincode": "401107"
+        },
+        {
+          "name": "JOFIN",
+          "email": "jofinjomin15@gmail.com",
+          "phone": "09152056712",
+          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+          "city": "mumbai",
+          "state": "Maharashtra",
+          "pincode": "401107"
+        }
+      ]
     },
     {
       "id": "fa1e",
       "email": "demo@gmail.com",
-      "password": "Jesus15@"
-    },
-    {
-      "id": "433f",
-      "email": "business.sarvm@gmail.com",
-      "password": "JofinJr15"
-    },
-    {
-      "id": "76d6",
-      "email": "testfive@gmail.com",
-      "password": "Fivetest5"
+      "password": "Jesus15@",
+      "addresses": []
     }
   ],
   "cart": [
     {
-      "id": "7",
-      "title": "Samsung Galaxy Book",
-      "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-      "price": 1499,
-      "discountPercentage": 4.15,
-      "rating": 4.25,
-      "stock": 50,
-      "brand": "Samsung",
-      "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
+      "id": "55",
+      "title": "Money Heist Printed Summer T Shirts",
+      "description": "Fabric Jercy, Size: M & L Wear Stylish Dual Stiched",
+      "price": 66,
+      "discountPercentage": 15.97,
+      "rating": 4.9,
+      "stock": 122,
+      "brand": "The Warehouse",
+      "category": "mens-shirts",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/55/thumbnail.jpg",
       "images": [
-        "https://cdn.dummyjson.com/product-images/7/1.jpg",
-        "https://cdn.dummyjson.com/product-images/7/2.jpg",
-        "https://cdn.dummyjson.com/product-images/7/3.jpg",
-        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
+        "https://cdn.dummyjson.com/product-images/55/1.jpg",
+        "https://cdn.dummyjson.com/product-images/55/2.webp",
+        "https://cdn.dummyjson.com/product-images/55/3.jpg",
+        "https://cdn.dummyjson.com/product-images/55/4.jpg",
+        "https://cdn.dummyjson.com/product-images/55/thumbnail.jpg"
       ],
-      "quantity": 5,
+      "quantity": 1,
+      "user": "76d6"
+    },
+    {
+      "id": "41",
+      "title": "NIGHT SUIT",
+      "description": "NIGHT SUIT RED MICKY MOUSE..  For Girls. Fantastic Suits.",
+      "price": 55,
+      "discountPercentage": 15.05,
+      "rating": 4.65,
+      "stock": 21,
+      "brand": "RED MICKY MOUSE..",
+      "category": "womens-dresses",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/41/thumbnail.webp",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/41/1.jpg",
+        "https://cdn.dummyjson.com/product-images/41/2.webp",
+        "https://cdn.dummyjson.com/product-images/41/3.jpg",
+        "https://cdn.dummyjson.com/product-images/41/4.jpg",
+        "https://cdn.dummyjson.com/product-images/41/thumbnail.webp"
+      ],
+      "quantity": 3,
       "user": "73b7"
+    }
+  ],
+  "orders": [
+    {
+      "id": "9865",
+      "cart": [
+        {
+          "id": "66",
+          "title": "Steel Analog Couple Watches",
+          "description": "Elegant design, Stylish ,Unique & Trendy,Comfortable wear",
+          "price": 35,
+          "discountPercentage": 3.23,
+          "rating": 4.79,
+          "stock": 24,
+          "brand": "Eastern Watches",
+          "category": "womens-watches",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/66/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/66/1.jpg",
+            "https://cdn.dummyjson.com/product-images/66/2.jpg",
+            "https://cdn.dummyjson.com/product-images/66/3.jpg",
+            "https://cdn.dummyjson.com/product-images/66/4.JPG",
+            "https://cdn.dummyjson.com/product-images/66/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "73b7"
+        }
+      ],
+      "totalAmount": 35,
+      "totalItems": 1,
+      "user1": {
+        "id": "73b7",
+        "email": "jofinjomin15@gmail.com",
+        "password": "Robertdowney15",
+        "addresses": [
+          {
+            "name": "JOFIN",
+            "email": "jofinjomin15@gmail.com",
+            "phone": "09152056712",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          },
+          {
+            "name": "Jomin Johnson",
+            "email": "jomin15@gmail.com",
+            "phone": "9152045687",
+            "street": "patel plaxe",
+            "city": "navi mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          },
+          {
+            "name": "Johnson",
+            "email": "Johnson@gmail.com",
+            "phone": "123456789",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "kollam",
+            "state": "Kerala",
+            "pincode": "401107"
+          },
+          {
+            "name": "JOFIN",
+            "email": "jofinjomin15@gmail.com",
+            "phone": "09152056712",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": null
     },
     {
-      "id": "10",
-      "title": "HP Pavilion 15-DK1056WM",
-      "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-      "price": 1099,
-      "discountPercentage": 6.18,
-      "rating": 4.43,
-      "stock": 89,
-      "brand": "HP Pavilion",
-      "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/10/1.jpg",
-        "https://cdn.dummyjson.com/product-images/10/2.jpg",
-        "https://cdn.dummyjson.com/product-images/10/3.jpg",
-        "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
+      "id": "2a22",
+      "cart": [
+        {
+          "id": "41",
+          "title": "NIGHT SUIT",
+          "description": "NIGHT SUIT RED MICKY MOUSE..  For Girls. Fantastic Suits.",
+          "price": 55,
+          "discountPercentage": 15.05,
+          "rating": 4.65,
+          "stock": 21,
+          "brand": "RED MICKY MOUSE..",
+          "category": "womens-dresses",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/41/thumbnail.webp",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/41/1.jpg",
+            "https://cdn.dummyjson.com/product-images/41/2.webp",
+            "https://cdn.dummyjson.com/product-images/41/3.jpg",
+            "https://cdn.dummyjson.com/product-images/41/4.jpg",
+            "https://cdn.dummyjson.com/product-images/41/thumbnail.webp"
+          ],
+          "quantity": 3,
+          "user": "73b7"
+        }
       ],
-      "quantity": 1,
-      "user": "76d6"
-    },
-    {
-      "id": "76",
-      "title": "Silver Ring Set Women",
-      "description": "Jewelry Type:RingsCertificate Type:NonePlating:Silver PlatedShapeattern:noneStyle:CLASSICReligious",
-      "price": 70,
-      "discountPercentage": 13.57,
-      "rating": 4.61,
-      "stock": 51,
-      "brand": "Darojay",
-      "category": "womens-jewellery",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/76/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/76/1.jpg",
-        "https://cdn.dummyjson.com/product-images/76/2.jpg",
-        "https://cdn.dummyjson.com/product-images/76/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": "76d6"
+      "totalAmount": 165,
+      "totalItems": 3,
+      "user1": {
+        "id": "73b7",
+        "email": "jofinjomin15@gmail.com",
+        "password": "Robertdowney15",
+        "addresses": [
+          {
+            "name": "JOFIN",
+            "email": "jofinjomin15@gmail.com",
+            "phone": "09152056712",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          },
+          {
+            "name": "Jomin Johnson",
+            "email": "jomin15@gmail.com",
+            "phone": "9152045687",
+            "street": "patel plaxe",
+            "city": "navi mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          },
+          {
+            "name": "Johnson",
+            "email": "Johnson@gmail.com",
+            "phone": "123456789",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "kollam",
+            "state": "Kerala",
+            "pincode": "401107"
+          },
+          {
+            "name": "JOFIN",
+            "email": "jofinjomin15@gmail.com",
+            "phone": "09152056712",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          }
+        ]
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Jomin Johnson",
+        "email": "jomin15@gmail.com",
+        "phone": "9152045687",
+        "street": "patel plaxe",
+        "city": "navi mumbai",
+        "state": "Maharashtra",
+        "pincode": "401107"
+      }
     }
   ]
 }

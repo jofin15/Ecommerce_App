@@ -306,7 +306,7 @@ export default function ProductDetails() {
                   </RadioGroup>
                 </div>
 
-                <Link to="/cart">
+                <Link >
                   <button
                     onClick={handleCart}
                     type="submit"
