@@ -73,7 +73,7 @@ export const createUserSlice = createSlice({
       })
       .addCase(updateUserAsync.fulfilled, (state, action) => {
         state.status = 'idle';
-        state.loggedInUser = action.payload;
+        state.loggedInUser = [action.payload];
       });
   },
 });

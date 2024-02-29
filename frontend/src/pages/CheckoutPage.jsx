@@ -1,5 +1,5 @@
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
-import { useState } from "react";
+// import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate } from "react-router-dom";
 import {
@@ -9,16 +9,17 @@ import {
 } from "../features/cart/cartSlice";
 import { selectUser, updateUserAsync } from "../features/auth/authSice";
 import { useForm } from "react-hook-form";
-import { createOrderAsync } from "../features/order/orderSlice";
+import { createOrderAsync, selectCurrentOrder } from "../features/order/orderSlice";
 
 export default function CheckoutPage() {
-  const [open, setOpen] = useState(true);
+ const currentOrder=useSelector(selectCurrentOrder)
   const cart = useSelector(selectCart);
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const user1 = user[0];
 
   console.log("my user1 in checkout", user1);
+  console.log("my cart in checkout",cart);
 
   const totalAmount = cart.reduce(
     (amount, item) => item.price * item.quantity + amount,
@@ -45,6 +46,7 @@ export default function CheckoutPage() {
   } = useForm();
 
   const handleAddress=(e)=>{
+    console.log("user selected this address",user1.addresses[e.target.value]);
     setSelectedAddress(user1.addresses[e.target.value])
   }
   
@@ -53,14 +55,22 @@ export default function CheckoutPage() {
     setPaymentMethod(e.target.value)
   }
 
+//TODO: Redirect to order-success page
+//TODO: Clear cart after order
+//TODO: on Server change the stock number of items
+
   const handleOrder=()=>{
-    const order={cart,totalAmount,totalItems,user1,paymentMethod,selectedAddress}
+    const order={cart,totalAmount,totalItems,user1,paymentMethod,selectedAddress,status:"pending"}
     console.log("My Order:-",order);
     dispatch(createOrderAsync(order))
   }
+
+console.log("currentOrder:- ",currentOrder);
+
   return (
     <>
       {cart.length === 0 && <Navigate to="/" replace={true}></Navigate>}
+      {currentOrder && <Navigate to={`/order-success/${currentOrder.id}`} replace={true}></Navigate>}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
           <div className="lg:col-span-3">
@@ -234,6 +244,7 @@ export default function CheckoutPage() {
                         <button
                           type="button"
                           className="text-sm font-semibold leading-6 text-gray-900"
+                          onClick={()=>reset()}
                         >
                           Reset
                         </button>
@@ -279,16 +290,17 @@ export default function CheckoutPage() {
                                 {address.street}
                               </p>
                               <p className="mt-1 truncate text-xs leading-5 text-gray-500">
-                                {address.pinCode}
+                                {address.pincode} <span className="mx-3">{address.city}</span> <span className="mx-3">{address.state}</span>
                               </p>
+                              
                             </div>
                           </div>
                           <div className="hidden sm:flex sm:flex-col sm:items-end">
                             <p className="text-sm leading-6 text-gray-900">
-                              Phone: {address.phone}
+                              Phone :- {address.phone}
                             </p>
-                            <p className="text-sm leading-6 text-gray-500">
-                              {address.city}
+                            <p className="text-sm leading-6 text-gray-900">
+                              Email :- {address.email}
                             </p>
                           </div>
                         </li>
@@ -369,7 +381,7 @@ export default function CheckoutPage() {
                               <h3>
                                 <a href={product.href}>{product.title}</a>
                               </h3>
-                              <p className="ml-4">{product.price}</p>
+                              <p className="ml-4">{totalAmount}</p>
                             </div>
                             <p className="mt-1 text-sm text-gray-500">
                               {product.brand}
@@ -411,7 +423,7 @@ export default function CheckoutPage() {
                 </div>
                 <div className="mt-8">
                   <div
-                    to="/"
+                    
                     onClick={handleOrder}
                     className="flex justify-center items-center px-6 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                   >
