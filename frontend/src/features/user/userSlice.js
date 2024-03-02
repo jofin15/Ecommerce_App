@@ -24,9 +24,10 @@ export const fetchLoggedInUserAsync=createAsyncThunk(
   'user/fetchLoggedInUser',
   async (user) => {
     const userId=user[0]
-    console.log("my user id :- ",userId.id);
-    const response = await fetchLoggedInUser(userId);
+    console.log("my fetchLogginUser user id :- ",userId.id);
+    const response = await fetchLoggedInUser(userId.id);
     // The value we return becomes the `fulfilled` action payload
+    console.log("my fetchLogginUser Response",response.data);
     return response.data;
   }
 )
@@ -65,7 +66,7 @@ export const userSlice = createSlice({
       })
 
       .addCase(fetchLoggedInUserAsync.pending, (state) => {
-        state.userInfo = 'loading';
+        state.status = 'loading';
       })
       .addCase(fetchLoggedInUserAsync.fulfilled, (state, action) => {
         state.status = 'idle';

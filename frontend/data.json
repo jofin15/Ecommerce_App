@@ -2434,66 +2434,35 @@
   ],
   "users": [
     {
-      "id": "73b7",
+      "id": "8f27",
       "email": "jofinjomin15@gmail.com",
       "password": "Robertdowney15",
       "addresses": [
         {
-          "name": "JOFIN",
-          "email": "jofinjomin15@gmail.com",
-          "phone": "09152056712",
-          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+          "name": "Jomin Johnson",
+          "email": "jomin15@gmail.com",
           "city": "mumbai",
           "state": "Maharashtra",
-          "pincode": "401107"
-        },
-        {
-          "name": "Jomin",
-          "email": "jofinjomin15@gmail.com",
-          "phone": "09152056712",
-          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-          "city": "mumbai",
-          "state": "Maharashtra",
-          "pincode": "401107"
-        },
-        {
-          "name": "Johnson",
-          "email": "Johnson15@gmail.com",
           "phone": "123456789",
-          "street": "patel plaxe",
-          "city": "mumbai",
-          "state": "Maharashtra",
-          "pincode": "401107"
-        }
-      ]
-    },
-    {
-      "id": "fa1e",
-      "email": "demo@gmail.com",
-      "password": "Jesus15@",
-      "addresses": []
-    },
-    {
-      "id": "b26f",
-      "email": "business.sarvm@gmail.com",
-      "password": "Random15@",
-      "addresses": [
-        {
-          "name": "JOFIN",
-          "email": "jofinjomin15@gmail.com",
-          "phone": "09152056712",
           "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-          "city": "mumbai",
-          "state": "Maharashtra",
           "pincode": "401107"
         },
         {
-          "name": "Jomin",
+          "name": "JOFIN",
           "email": "jofinjomin15@gmail.com",
-          "phone": "09152056712",
-          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
           "city": "mumbai",
           "state": "Maharashtra",
+          "phone": "09152056712",
+          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+          "pincode": "401107"
+        },
+        {
+          "name": "Mini",
+          "email": "Mini5@gmail.com",
+          "city": "mumbai",
+          "state": "Maharashtra",
+          "phone": "8113838003",
+          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
           "pincode": "401107"
         }
       ]
@@ -2502,240 +2471,88 @@
   "cart": [],
   "orders": [
     {
-      "id": "f0ef",
+      "id": "d8b0",
       "cart": [
         {
-          "id": "4",
-          "title": "OPPOF19",
-          "description": "OPPO F19 is officially announced on April 2021.",
-          "price": 280,
-          "discountPercentage": 17.91,
-          "rating": 4.3,
-          "stock": 123,
-          "brand": "OPPO",
-          "category": "smartphones",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/4/1.jpg",
-            "https://cdn.dummyjson.com/product-images/4/2.jpg",
-            "https://cdn.dummyjson.com/product-images/4/3.jpg",
-            "https://cdn.dummyjson.com/product-images/4/4.jpg",
-            "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg"
-          ],
-          "quantity": 2,
-          "user": "b26f"
-        }
-      ],
-      "totalAmount": 560,
-      "totalItems": 2,
-      "user1": {
-        "id": "b26f",
-        "email": "business.sarvm@gmail.com",
-        "password": "Random15@",
-        "addresses": [
-          {
-            "name": "JOFIN",
-            "email": "jofinjomin15@gmail.com",
-            "phone": "09152056712",
-            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
-          },
-          {
-            "name": "Jomin",
-            "email": "jofinjomin15@gmail.com",
-            "phone": "09152056712",
-            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
-          }
-        ]
-      },
-      "paymentMethod": "cash",
-      "selectedAddress": {
-        "name": "JOFIN",
-        "email": "jofinjomin15@gmail.com",
-        "phone": "09152056712",
-        "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-        "city": "mumbai",
-        "state": "Maharashtra",
-        "pincode": "401107"
-      },
-      "status": "pending"
-    },
-    {
-      "id": "8a8b",
-      "cart": [
-        {
-          "id": "60",
-          "title": "Stylish Casual Jeans Shoes",
-          "description": "High Quality ,Stylish design ,Comfortable wear ,FAshion ,Durable",
-          "price": 58,
-          "discountPercentage": 7.55,
-          "rating": 4.55,
-          "stock": 129,
-          "brand": "Sneakers",
-          "category": "mens-shoes",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/60/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/60/1.jpg",
-            "https://cdn.dummyjson.com/product-images/60/2.jpg",
-            "https://cdn.dummyjson.com/product-images/60/3.jpg",
-            "https://cdn.dummyjson.com/product-images/60/thumbnail.jpg"
-          ],
-          "quantity": 1,
-          "user": "73b7"
-        },
-        {
-          "id": "88",
-          "title": "TC Reusable Silicone Magic Washing Gloves",
-          "description": "TC Reusable Silicone Magic Washing Gloves with Scrubber, Cleaning Brush Scrubber Gloves Heat Resistant Pair for Cleaning of Kitchen, Dishes, Vegetables and Fruits, Bathroom, Car Wash, Pet Care and Multipurpose",
-          "price": 29,
-          "discountPercentage": 3.19,
-          "rating": 4.98,
-          "stock": 42,
-          "brand": "TC Reusable",
-          "category": "automotive",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/88/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/88/1.jpg",
-            "https://cdn.dummyjson.com/product-images/88/2.jpg",
-            "https://cdn.dummyjson.com/product-images/88/3.jpg",
-            "https://cdn.dummyjson.com/product-images/88/4.webp",
-            "https://cdn.dummyjson.com/product-images/88/thumbnail.jpg"
-          ],
-          "quantity": 1,
-          "user": "73b7"
-        }
-      ],
-      "totalAmount": 87,
-      "totalItems": 2,
-      "user1": {
-        "id": "73b7",
-        "email": "jofinjomin15@gmail.com",
-        "password": "Robertdowney15",
-        "addresses": [
-          {
-            "name": "JOFIN",
-            "email": "jofinjomin15@gmail.com",
-            "phone": "09152056712",
-            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
-          },
-          {
-            "name": "Jomin",
-            "email": "jofinjomin15@gmail.com",
-            "phone": "09152056712",
-            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
-          }
-        ]
-      },
-      "paymentMethod": "card",
-      "selectedAddress": {
-        "name": "Jomin",
-        "email": "jofinjomin15@gmail.com",
-        "phone": "09152056712",
-        "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-        "city": "mumbai",
-        "state": "Maharashtra",
-        "pincode": "401107"
-      },
-      "status": "pending"
-    },
-    {
-      "id": "211b",
-      "cart": [
-        {
-          "id": "5",
-          "title": "Huawei P30",
-          "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-          "price": 499,
-          "discountPercentage": 10.58,
-          "rating": 4.09,
-          "stock": 32,
-          "brand": "Huawei",
-          "category": "smartphones",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/5/1.jpg",
-            "https://cdn.dummyjson.com/product-images/5/2.jpg",
-            "https://cdn.dummyjson.com/product-images/5/3.jpg"
-          ],
-          "quantity": 1,
-          "user": "73b7"
-        }
-      ],
-      "totalAmount": 499,
-      "totalItems": 1,
-      "user1": {
-        "id": "73b7",
-        "email": "jofinjomin15@gmail.com",
-        "password": "Robertdowney15",
-        "addresses": [
-          {
-            "name": "JOFIN",
-            "email": "jofinjomin15@gmail.com",
-            "phone": "09152056712",
-            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
-          },
-          {
-            "name": "Jomin",
-            "email": "jofinjomin15@gmail.com",
-            "phone": "09152056712",
-            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
-          }
-        ]
-      },
-      "paymentMethod": "cash",
-      "selectedAddress": {
-        "name": "JOFIN",
-        "email": "jofinjomin15@gmail.com",
-        "phone": "09152056712",
-        "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-        "city": "mumbai",
-        "state": "Maharashtra",
-        "pincode": "401107"
-      },
-      "status": "pending"
-    },
-    {
-      "id": "add9",
-      "cart": [
-        {
-          "id": "79",
-          "title": "Elegant Female Pearl Earrings",
-          "description": "Elegant Female Pearl Earrings Set Zircon Pearl Earings Women Party Accessories 9 Pairs/Set",
+          "id": "30",
+          "title": "Key Holder",
+          "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
           "price": 30,
-          "discountPercentage": 12.8,
-          "rating": 4.74,
-          "stock": 16,
-          "brand": "Fashion Jewellery",
-          "category": "womens-jewellery",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/79/thumbnail.jpg",
+          "discountPercentage": 2.92,
+          "rating": 4.92,
+          "stock": 54,
+          "brand": "Golden",
+          "category": "home-decoration",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg",
           "images": [
-            "https://cdn.dummyjson.com/product-images/79/1.jpg"
+            "https://cdn.dummyjson.com/product-images/30/1.jpg",
+            "https://cdn.dummyjson.com/product-images/30/2.jpg",
+            "https://cdn.dummyjson.com/product-images/30/3.jpg",
+            "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg"
           ],
           "quantity": 1,
-          "user": "73b7"
+          "user": "8f27"
         }
       ],
       "totalAmount": 30,
       "totalItems": 1,
       "user1": {
-        "id": "73b7",
+        "id": "8f27",
+        "email": "jofinjomin15@gmail.com",
+        "password": "Robertdowney15",
+        "addresses": [
+          {
+            "name": "JOFIN",
+            "email": "jofinjomin15@gmail.com",
+            "phone": "09152056712",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "JOFIN",
+        "email": "jofinjomin15@gmail.com",
+        "phone": "09152056712",
+        "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+        "city": "mumbai",
+        "state": "Maharashtra",
+        "pincode": "401107"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "e047",
+      "cart": [
+        {
+          "id": "98",
+          "title": "3 lights lndenpant kitchen islang",
+          "description": "3 lights lndenpant kitchen islang dining room pendant rice paper chandelier contemporary led pendant light modern chandelier",
+          "price": 34,
+          "discountPercentage": 5.92,
+          "rating": 4.99,
+          "stock": 44,
+          "brand": "DADAWU",
+          "category": "lighting",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/98/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/98/1.jpg",
+            "https://cdn.dummyjson.com/product-images/98/2.jpg",
+            "https://cdn.dummyjson.com/product-images/98/3.jpg",
+            "https://cdn.dummyjson.com/product-images/98/4.jpg",
+            "https://cdn.dummyjson.com/product-images/98/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "8f27"
+        }
+      ],
+      "totalAmount": 34,
+      "totalItems": 1,
+      "user1": {
+        "id": "8f27",
         "email": "jofinjomin15@gmail.com",
         "password": "Robertdowney15",
         "addresses": [
@@ -2749,27 +2566,26 @@
             "pincode": "401107"
           },
           {
-            "name": "Jomin",
+            "name": "JOFIN",
             "email": "jofinjomin15@gmail.com",
             "phone": "09152056712",
             "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
             "city": "mumbai",
             "state": "Maharashtra",
             "pincode": "401107"
-          },
-          {
-            "name": "Johnson",
-            "email": "Johnson15@gmail.com",
-            "phone": "123456789",
-            "street": "patel plaxe",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
           }
         ]
       },
-      "paymentMethod": "card",
-      "selectedAddress": null,
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "JOFIN",
+        "email": "jofinjomin15@gmail.com",
+        "phone": "09152056712",
+        "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+        "city": "mumbai",
+        "state": "Maharashtra",
+        "pincode": "401107"
+      },
       "status": "pending"
     }
   ]

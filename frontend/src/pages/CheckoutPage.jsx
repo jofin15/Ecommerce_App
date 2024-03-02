@@ -10,13 +10,14 @@ import {
 import { selectUser, updateUserAsync } from "../features/auth/authSice";
 import { useForm } from "react-hook-form";
 import { createOrderAsync, selectCurrentOrder } from "../features/order/orderSlice";
+import { selectUserInfo } from "../features/user/userSlice";
 
 export default function CheckoutPage() {
  const currentOrder=useSelector(selectCurrentOrder)
   const cart = useSelector(selectCart);
   const dispatch = useDispatch();
-  const user = useSelector(selectUser);
-  const user1 = user[0];
+  const user1 = useSelector(selectUserInfo);
+
 
   console.log("my user1 in checkout", user1);
   console.log("my cart in checkout",cart);
