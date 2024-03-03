@@ -16,6 +16,7 @@ export const updateUserAsync = createAsyncThunk(
   async (update) => {
     const response = await updateUser(update);
     // The value we return becomes the `fulfilled` action payload
+    console.log("updated user info in profile",response.data);
     return response.data;
   }
 )
@@ -62,7 +63,7 @@ export const userSlice = createSlice({
       })
       .addCase(updateUserAsync.fulfilled, (state, action) => {
         state.status = 'idle';
-        state.loggedInUser = [action.payload];
+        state.userInfo = action.payload;
       })
 
       .addCase(fetchLoggedInUserAsync.pending, (state) => {

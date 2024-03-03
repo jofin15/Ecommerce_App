@@ -2448,27 +2448,40 @@
           "pincode": "401107"
         },
         {
-          "name": "JOFIN",
+          "name": "Jofin",
           "email": "jofinjomin15@gmail.com",
           "city": "mumbai",
           "state": "Maharashtra",
           "phone": "09152056712",
           "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
           "pincode": "401107"
-        },
-        {
-          "name": "Mini",
-          "email": "Mini5@gmail.com",
-          "city": "mumbai",
-          "state": "Maharashtra",
-          "phone": "8113838003",
-          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-          "pincode": "401107"
         }
       ]
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "53",
+      "title": "printed high quality T shirts",
+      "description": "Brand: vintage Apparel ,Export quality",
+      "price": 35,
+      "discountPercentage": 7.54,
+      "rating": 4.89,
+      "stock": 6,
+      "brand": "Vintage Apparel",
+      "category": "mens-shirts",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/53/thumbnail.jpg",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/53/1.webp",
+        "https://cdn.dummyjson.com/product-images/53/2.jpg",
+        "https://cdn.dummyjson.com/product-images/53/3.jpg",
+        "https://cdn.dummyjson.com/product-images/53/4.jpg",
+        "https://cdn.dummyjson.com/product-images/53/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": "8f27"
+    }
+  ],
   "orders": [
     {
       "id": "d8b0",

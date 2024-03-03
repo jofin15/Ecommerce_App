@@ -53,9 +53,6 @@ export function createUser(userData) {
 
   export function signOut(userId) {
     return new Promise(async (resolve,reject) =>{
-
           resolve({data:"success"})
-
-   
   });
   }
