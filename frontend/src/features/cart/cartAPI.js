@@ -58,7 +58,7 @@ export  function resetCart(userId) {
   return new Promise(async (resolve) =>{
   const response=await fetchItemsByUserId(userId)
   const items=response.data 
-  console.log("order items:- ",items);
+  console.log("cart items which are in backend:- ",items);
   // for (let item in items){
   //   console.log("before delete",item.id);
   //   await deleteItemFromCart(item.id)

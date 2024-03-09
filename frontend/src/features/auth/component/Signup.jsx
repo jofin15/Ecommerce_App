@@ -12,7 +12,6 @@ export default function Signup() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
   
@@ -41,7 +40,7 @@ export default function Signup() {
           noValidate 
           className="space-y-6" 
           onSubmit={handleSubmit((data)=>{
-            dispatch(createUserAsync({email:data.email,password:data.password,addresses:[]}))
+            dispatch(createUserAsync({email:data.email,password:data.password,addresses:[], role:"user"}))
           console.log("sign up data:- ",data);
         })}>
           <div>

@@ -7,10 +7,11 @@ import {
   selectCart,
   updateItemAsync,
 } from "../features/cart/cartSlice";
-import { selectUser, updateUserAsync } from "../features/auth/authSice";
+// import { selectUser, updateUserAsync } from "../features/auth/authSice";
+
 import { useForm } from "react-hook-form";
 import { createOrderAsync, selectCurrentOrder } from "../features/order/orderSlice";
-import { selectUserInfo } from "../features/user/userSlice";
+import { selectUserInfo, updateUserAsync } from "../features/user/userSlice";
 
 export default function CheckoutPage() {
  const currentOrder=useSelector(selectCurrentOrder)

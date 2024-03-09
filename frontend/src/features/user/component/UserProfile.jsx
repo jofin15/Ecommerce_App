@@ -76,6 +76,9 @@ export default function UserProfile() {
           <h2 className="text-xl font-medium my-5 tracking-tight text-red-900">
             Email Address:- {user1.email}
           </h2>
+          {user1.role ==="admin" && (<h3 className="text-xl font-medium my-5 tracking-tight text-red-900">
+            Role:- {user1.role}
+          </h3>)}
         </div>
 
         <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
@@ -289,7 +292,7 @@ export default function UserProfile() {
                             <button
                               type="button"
                               className="text-sm font-semibold leading-6 text-gray-900"
-                              onClick={() => setSelectedAddress(-1)}
+                              onClick={() => setSelectedEditIndex(-1)}
                             >
                               Cancel
                             </button>

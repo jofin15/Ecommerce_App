@@ -1,20 +1,18 @@
 import Navbar from "../features/navbar/Navbar";
 import React from 'react'
-import ProductList from "../features/product-list/component/ProductList";
-import { Link } from "react-router-dom";
+import AdminProductList from "../features/admin/component/AdminProductList";
 // import Cart from "../features/cart/Cart";
 // import ProductDetail from "./ProductDetailPages"
 
-function Home() {
+function AdminHomePage() {
   return (
     <div>
         <Navbar>
-            <ProductList />
+            <AdminProductList />
         </Navbar>
-        
       
     </div>
   )
 }
 
-export default Home
+export default AdminHomePage

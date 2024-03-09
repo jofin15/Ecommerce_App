@@ -20,7 +20,7 @@ export default function Login() {
     <>
     {user && <Navigate to="/" replace={true}></Navigate>}
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-      {error}
+      
     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
       <img
         className="mx-auto h-10 w-auto"
@@ -30,6 +30,7 @@ export default function Login() {
       <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
         Sign in to your account
       </h2>
+      <p className='text-red-500 text-center '>{error}</p>
     </div>
 
     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -38,7 +39,7 @@ export default function Login() {
           className="space-y-6" 
           onSubmit={handleSubmit((data)=>{
             dispatch(checkUserAsync({email:data.email,password:data.password,addresses:[]}))
-          console.log("sign up data:- ",data);
+          console.log("Login data:- ",data);
         })}>
         <div>
           <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
