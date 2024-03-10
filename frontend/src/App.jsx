@@ -33,6 +33,7 @@ import AdminHomePage from './pages/AdminHomePage';
 import AdminProductDetailPage from './pages/AdminProductDetailPage';
 import ProductForm from './features/admin/component/ProductForm';
 import AdminProductForm from './pages/AdminProductForm';
+import AdminOrderPage from './pages/AdminOrderPage';
 
 const router = createBrowserRouter([
   {
@@ -95,6 +96,13 @@ const router = createBrowserRouter([
     path:"/order-success/:id",
     element: 
       <OrderSuccessPage />
+  },
+  {
+    path:"/admin/orders",
+    element: 
+    <ProtectedAdmin>
+        <AdminOrderPage />
+    </ProtectedAdmin>
   },
   {
     path:"/orders",

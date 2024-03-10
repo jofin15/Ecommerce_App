@@ -2,12 +2,12 @@
   "products": [
     {
       "id": "1",
-      "title": "iPhone 9.1",
+      "title": "iPhone 9",
       "description": "An apple mobile which is nothing like apple",
       "price": 549,
       "discountPercentage": 6,
       "rating": 3,
-      "stock": 94,
+      "stock": 0,
       "brand": "Apple",
       "category": "smartphones",
       "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
@@ -1865,9 +1865,9 @@
       "description": "All new Iphone 15",
       "category": "smartphones",
       "brand": "Apple",
-      "price": "75000",
-      "discountPercentage": "15",
-      "stock": "5",
+      "price": 75000,
+      "discountPercentage": 15,
+      "stock": 5,
       "thumbnail": "https://www.rueducommerce.fr/media/produits/apple/apple-iphone-15-pro-max-6-7-5g-double-sim-1-to-blanc-titanium-3545068_1200x1200.jpeg",
       "images": [
         "https://i3.momoshop.com.tw/1702998075/goodsimg/0011/857/861/11857861_R_m.webp",
@@ -1875,7 +1875,11 @@
         "https://media.seudinheiro.com/cdn-cgi/image/fit=contain,width=715&,format=auto/uploads/2023/10/iPhone-15-General-Feature-Black-715x402.jpg",
         "https://www.rueducommerce.fr/media/produits/apple/apple-iphone-15-pro-max-6-7-5g-double-sim-1-to-blanc-titanium-3545068_1200x1200.jpeg"
       ],
-      "rating": 0
+      "rating": 0,
+      "deleted": true,
+      "image1": "https://i3.momoshop.com.tw/1702998075/goodsimg/0011/857/861/11857861_R_m.webp",
+      "image2": "https://dxbyzx5id4chj.cloudfront.net/fit-in/700x700/filters:fill(fff)/pub/media/catalog/product/4/0/405162983_3895.jpg",
+      "image3": "https://media.seudinheiro.com/cdn-cgi/image/fit=contain,width=715&,format=auto/uploads/2023/10/iPhone-15-General-Feature-Black-715x402.jpg"
     },
     {
       "id": "2ef6",
@@ -1917,7 +1921,8 @@
         "https://bestpricegh.com/cdn/shop/products/51Sn5X2gfaL._SL1500_2048x2048.jpg?v=1663635639",
         "https://m.media-amazon.com/images/I/619f09kK7tL._AC_UF1000,1000_QL80_.jpg"
       ],
-      "rating": 0
+      "rating": 0,
+      "deleted": true
     }
   ],
   "brands": [
@@ -2543,6 +2548,15 @@
           "city": "mumbai",
           "state": "Maharashtra",
           "pincode": "401107"
+        },
+        {
+          "name": "Jomin",
+          "email": "jofinjomin15@gmail.com",
+          "phone": "09152056712",
+          "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+          "city": "mumbai",
+          "state": "Maharashtra",
+          "pincode": "401107"
         }
       ],
       "role": "admin"
@@ -2551,160 +2565,28 @@
   "cart": [],
   "orders": [
     {
-      "id": "f2db",
+      "id": "de7c",
       "cart": [
         {
-          "id": "46",
-          "title": "women's shoes",
-          "description": "Close: Lace, Style with bottom: Increased inside, Sole Material: Rubber",
-          "price": 40,
-          "discountPercentage": 16.96,
-          "rating": 4.14,
-          "stock": 72,
-          "brand": "IELGY fashion",
-          "category": "womens-shoes",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/46/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/46/1.webp",
-            "https://cdn.dummyjson.com/product-images/46/2.jpg",
-            "https://cdn.dummyjson.com/product-images/46/3.jpg",
-            "https://cdn.dummyjson.com/product-images/46/4.jpg",
-            "https://cdn.dummyjson.com/product-images/46/thumbnail.jpg"
-          ],
-          "quantity": 3,
-          "user": "b899"
-        },
-        {
-          "id": "73",
-          "title": "Fancy hand clutch",
-          "description": "This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.",
-          "price": 44,
-          "discountPercentage": 10.39,
-          "rating": 4.18,
-          "stock": 101,
-          "brand": "Bracelet",
-          "category": "womens-bags",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/73/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/73/1.jpg",
-            "https://cdn.dummyjson.com/product-images/73/2.webp",
-            "https://cdn.dummyjson.com/product-images/73/3.jpg",
-            "https://cdn.dummyjson.com/product-images/73/thumbnail.jpg"
-          ],
-          "quantity": 1,
-          "user": "b899"
-        }
-      ],
-      "totalAmount": 164,
-      "totalItems": 4,
-      "user1": {
-        "id": "b899",
-        "email": "jomin@gmail.com",
-        "password": "Robertdowney15",
-        "addresses": [
-          {
-            "name": "JOFIN",
-            "email": "jofinjomin15@gmail.com",
-            "phone": "09152056712",
-            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
-          }
-        ]
-      },
-      "paymentMethod": "card",
-      "selectedAddress": {
-        "name": "JOFIN",
-        "email": "jofinjomin15@gmail.com",
-        "phone": "09152056712",
-        "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-        "city": "mumbai",
-        "state": "Maharashtra",
-        "pincode": "401107"
-      },
-      "status": "pending"
-    },
-    {
-      "id": "1c76",
-      "cart": [
-        {
-          "id": "7",
-          "title": "Samsung Galaxy Book",
-          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-          "price": 1499,
-          "discountPercentage": 4.15,
-          "rating": 4.25,
-          "stock": 50,
+          "id": "3",
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
           "brand": "Samsung",
-          "category": "laptops",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/7/1.jpg",
-            "https://cdn.dummyjson.com/product-images/7/2.jpg",
-            "https://cdn.dummyjson.com/product-images/7/3.jpg",
-            "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
-          ],
-          "quantity": 1,
-          "user": "b899"
-        }
-      ],
-      "totalAmount": 1499,
-      "totalItems": 1,
-      "user1": {
-        "id": "b899",
-        "email": "jomin@gmail.com",
-        "password": "Robertdowney15",
-        "addresses": [
-          {
-            "name": "JOFIN",
-            "email": "jofinjomin15@gmail.com",
-            "phone": "09152056712",
-            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-            "city": "mumbai",
-            "state": "Maharashtra",
-            "pincode": "401107"
-          }
-        ]
-      },
-      "paymentMethod": "cash",
-      "selectedAddress": {
-        "name": "JOFIN",
-        "email": "jofinjomin15@gmail.com",
-        "phone": "09152056712",
-        "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
-        "city": "mumbai",
-        "state": "Maharashtra",
-        "pincode": "401107"
-      },
-      "status": "pending"
-    },
-    {
-      "id": "5c1f",
-      "cart": [
-        {
-          "id": "dd39",
-          "title": "Iphone 15",
-          "description": "All new Iphone 15",
           "category": "smartphones",
-          "brand": "Apple",
-          "price": "75000",
-          "discountPercentage": "15",
-          "stock": "5",
-          "thumbnail": "https://www.rueducommerce.fr/media/produits/apple/apple-iphone-15-pro-max-6-7-5g-double-sim-1-to-blanc-titanium-3545068_1200x1200.jpeg",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
           "images": [
-            "https://i3.momoshop.com.tw/1702998075/goodsimg/0011/857/861/11857861_R_m.webp",
-            "https://dxbyzx5id4chj.cloudfront.net/fit-in/700x700/filters:fill(fff)/pub/media/catalog/product/4/0/405162983_3895.jpg",
-            "https://media.seudinheiro.com/cdn-cgi/image/fit=contain,width=715&,format=auto/uploads/2023/10/iPhone-15-General-Feature-Black-715x402.jpg",
-            "https://www.rueducommerce.fr/media/produits/apple/apple-iphone-15-pro-max-6-7-5g-double-sim-1-to-blanc-titanium-3545068_1200x1200.jpeg"
+            "https://cdn.dummyjson.com/product-images/3/1.jpg"
           ],
-          "rating": 0,
-          "quantity": 5,
+          "quantity": 2,
           "user": "d6b1"
         }
       ],
-      "totalAmount": 375000,
-      "totalItems": 5,
+      "totalAmount": 2498,
+      "totalItems": 2,
       "user1": {
         "id": "d6b1",
         "email": "jofinjomin15@gmail.com",
@@ -2718,11 +2600,20 @@
             "city": "mumbai",
             "state": "Maharashtra",
             "pincode": "401107"
+          },
+          {
+            "name": "Jomin",
+            "email": "jofinjomin15@gmail.com",
+            "phone": "09152056712",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
           }
         ],
         "role": "admin"
       },
-      "paymentMethod": "card",
+      "paymentMethod": "cash",
       "selectedAddress": {
         "name": "JOFIN",
         "email": "jofinjomin15@gmail.com",
@@ -2732,7 +2623,90 @@
         "state": "Maharashtra",
         "pincode": "401107"
       },
-      "status": "pending"
+      "status": "Delivered"
+    },
+    {
+      "id": "524c",
+      "cart": [
+        {
+          "id": "5",
+          "title": "Huawei P30",
+          "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+          "price": 499,
+          "discountPercentage": 10.58,
+          "rating": 4.09,
+          "stock": 32,
+          "brand": "Huawei",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/5/1.jpg",
+            "https://cdn.dummyjson.com/product-images/5/2.jpg",
+            "https://cdn.dummyjson.com/product-images/5/3.jpg"
+          ],
+          "quantity": 1,
+          "user": "d6b1"
+        },
+        {
+          "id": "10",
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/10/1.jpg",
+            "https://cdn.dummyjson.com/product-images/10/2.jpg",
+            "https://cdn.dummyjson.com/product-images/10/3.jpg",
+            "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
+          ],
+          "quantity": 1,
+          "user": "d6b1"
+        }
+      ],
+      "totalAmount": 1598,
+      "totalItems": 2,
+      "user1": {
+        "id": "d6b1",
+        "email": "jofinjomin15@gmail.com",
+        "password": "Robertdowney15",
+        "addresses": [
+          {
+            "name": "JOFIN",
+            "email": "jofinjomin15@gmail.com",
+            "phone": "09152056712",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          },
+          {
+            "name": "Jomin",
+            "email": "jofinjomin15@gmail.com",
+            "phone": "09152056712",
+            "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+            "city": "mumbai",
+            "state": "Maharashtra",
+            "pincode": "401107"
+          }
+        ],
+        "role": "admin"
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Jomin",
+        "email": "jofinjomin15@gmail.com",
+        "phone": "09152056712",
+        "street": "near amar palace ,mira road ,mumbai, 202 a wing ,patel plaza",
+        "city": "mumbai",
+        "state": "Maharashtra",
+        "pincode": "401107"
+      },
+      "status": "Delivered"
     }
   ]
 }

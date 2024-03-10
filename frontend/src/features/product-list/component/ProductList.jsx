@@ -402,22 +402,21 @@ function DesktopFilter({ handleFilter, filters }) {
 }
 
 function Pagination({ handlePage, page, setPage, totalItems = 100 }) {
-  const totalPages=Math.ceil(totalItems/ITEMS_PER_PAGE)
+  const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
   return (
     <div>
       <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
         <div className="flex flex-1 justify-between sm:hidden">
-
           <div
             className="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer"
-            onClick={(e) =>handlePage(page>0?(page-1):page)}
+            onClick={(e) => handlePage(page > 0 ? page - 1 : page)}
           >
             Previous
           </div>
 
           <div
             className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer"
-            onClick={(e) =>handlePage(page<totalPages-1?(page+1):page)}
+            onClick={(e) => handlePage(page < totalPages - 1 ? page + 1 : page)}
           >
             Next
           </div>
@@ -443,7 +442,7 @@ function Pagination({ handlePage, page, setPage, totalItems = 100 }) {
             >
               <div
                 className="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-                onClick={(e) =>handlePage(page>0?(page-1):page)}
+                onClick={(e) => handlePage(page > 0 ? page - 1 : page)}
               >
                 <span className="sr-only">Previous</span>
                 <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
@@ -455,17 +454,20 @@ function Pagination({ handlePage, page, setPage, totalItems = 100 }) {
               }).map((el, index) => (
                 <div
                   aria-current="page"
-                  className={`relative z-10 inline-flex items-center ${index  === page ? "bg-indigo-600 text-white " : "bg-white text-black"} cursor-pointer px-4 py-2 text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+                  className={`relative z-10 inline-flex items-center ${index === page ? "bg-indigo-600 text-white " : "bg-white text-black"} cursor-pointer px-4 py-2 text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
                   onClick={(e) => handlePage(index)}
                 >
                   {index + 1}
                 </div>
               ))}
 
-              <div className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 cursor-pointer" onClick={(e) =>         handlePage(page<totalPages-1?(page+1):page)} >
-                <span className="sr-only">
-                  Next
-                </span>
+              <div
+                className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 cursor-pointer"
+                onClick={(e) =>
+                  handlePage(page < totalPages - 1 ? page + 1 : page)
+                }
+              >
+                <span className="sr-only">Next</span>
                 <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
               </div>
             </nav>
@@ -524,6 +526,17 @@ function ProductGrid({ products }) {
                       </p>
                     </div>
                   </div>
+                  {product.deleted && (
+                    <div>
+                      <p className="text-sm text-red-400">Product Deleted</p>
+                    </div>
+                  )}
+
+                  {product.stock<=0 && (
+                    <div>
+                      <p className="text-sm text-red-400">Out of stock</p>
+                    </div>
+                  )}
                 </div>
               </Link>
             ))}
